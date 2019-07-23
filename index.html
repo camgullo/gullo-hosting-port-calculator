@@ -156,9 +156,10 @@
 	        ['Internal IP', ip],
 	        ['External IP', extIp],
 	        ['Location', name],
-	        ['Port (start)', portStart.toString()],
+	        ['Port Range', portStart.toString(), portEnd.toString()],
 	        ['Port (end)', portEnd.toString()],
-	        ['Port (ssh)', sshPort.toString()] ]);
+	        ['SSH Port ', sshPort.toString()] ]),
+		['SSH Command ', 'ssh root@', extIp, ' -p ' sshPort.toString()] ]);
 	}
 
 	function formatText(items) {
