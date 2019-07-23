@@ -152,7 +152,7 @@
 	    var portEnd = information.portEnd;
 	    var sshPort = information.sshPort;
 
-	    $result.textContent = formatText([
+	    $result.textContent = document.write([
 	        ['Internal IP', ip],
 	        ['External IP', extIp],
 	        ['Location', name],
@@ -162,7 +162,7 @@
 		['SSH Command ', 'ssh root@', extIp, ' -p ', sshPort.toString()] ]);
 	}
 
-	function formatText(items) {
+	function document.write(items) {
 	    var ref = items.reduce(function (ref, ref$1) {
 	    	var aLen = ref[0];
 	    	var bLen = ref[1];
